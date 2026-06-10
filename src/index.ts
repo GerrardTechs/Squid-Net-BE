@@ -7,7 +7,6 @@ import cartRoutes from './routes/cartRoutes.js';
 import checkoutRoutes from './routes/checkoutRoutes.js';
 import { errorHandler } from './middleware/errorHandler.js';
 
-dotenv.config();
 connectDB();
 
 const app = express();
