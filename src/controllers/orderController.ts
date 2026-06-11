@@ -54,7 +54,6 @@ export const getOrdersByUser = async (
       .sort({ createdAt: -1 }) // terbaru di atas
       .lean();
 
-    // Kembalikan array kosong (bukan 404) jika user belum punya order
     res.status(200).json({
       success: true,
       count: orders.length,
