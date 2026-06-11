@@ -18,7 +18,6 @@
     "isolatedModules": true,
     "skipLibCheck": true
   },
-  /* --- TAMBAHKAN BLOK INI DI BAWAH COMPILER OPTIONS --- */
   "ts-node": {
     "esm": true,
     "experimentalSpecifierResolution": "node"
