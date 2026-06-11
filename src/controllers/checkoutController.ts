@@ -45,7 +45,7 @@ export const createOrder = async (
     const orderItems = [];
 
     for (const item of cart.items) {
-      const product = item.productId as any; // already populated
+      const product = item.productId as any;
 
       if (!product.isActive || product.stock < item.quantity) {
         res.status(400).json({
