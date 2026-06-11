@@ -9,6 +9,8 @@ import productRoutes from './routes/productRoutes.js';
 import cartRoutes from './routes/cartRoutes.js';
 import checkoutRoutes from './routes/checkoutRoutes.js';
 import { errorHandler } from './middleware/errorHandler.js';
+import orderRoutes from './routes/orderRoutes.js';
+
 
 const app = express();
 
@@ -25,6 +27,8 @@ connectDB();
 app.use('/api/products', productRoutes);
 app.use('/api/cart', cartRoutes);
 app.use('/api/checkout', checkoutRoutes);
+app.use('/api/orders', orderRoutes);
+
 
 app.get('/', (req, res) => {
   res.send('API Warnet Squid.Net berjalan lancar! 🦑');
